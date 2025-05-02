@@ -1,0 +1,23 @@
+Características de la computadora
+* Procesador: Intel (R) Core(TM) i5-8365U CPU @ 1.60GHz (8 CPUs), ~1.9GHz
+* Memoria RAM: 16384MB RAM
+* Versión de Windows: Version 24H2 (OS Build 26100.3476)
+* Espacio en disco antes de la instalación: 91.9GB
+* Espacio en disco después de la instalación: 94.8GB
+
+Descargar SQL
+* Ve al sitio oficial de Microsoft y descarga SQL Server Express.
+* Ejecuta el instalador y selecciona Basic.
+* Se le da Next hasta que la aplicación se empieza a descargar.
+* Se finaliza la instalación y se puede utilizar el programa.
+
+
+
+Conclusión:
+Aunque parece ser más complicado, PowerShell fue mucho más fácil de correr con un mínimo número de errores que debieron ser corregidos. Sin embargo, cuando si había errores SSMS era más fácil de comprender pues explicaban muy detalladamente que es lo que estaba mal. Ambos fueron complicados de utilizar, pero siento que tienen sus ventajas y desventajas y en mi opinión ambos son una buena opción dependiendo de que es lo que estas buscando hacer.
+
+Nueva consulta SQL:
+Se usa para mostrar los últimos 3 empleados contratados, ordenandolos por fecha de contratación.
+SELECT TOP 3 FirstName, LastName, HireDate
+FROM Employees
+ORDER BY HireDate DESC;
